@@ -29,11 +29,11 @@ function UserSidebar() {
           <button className={`pl-4 ${(isActive('/bookingPage' || isActive('/TherapistDetailsPage'))) ? 'bg-[#FDFEF1] pl-4 text-black font-bold w-[227px] h-[49px] rounded-lg text-left' : ''}`}>
                         <Link to="/bookingPage">Therapists</Link>
           </button>
-          <button className={`pl-4 ${(isActive('/userdashboard-groups') || isActive('/userdashboard-groupTherapy')) ? 'bg-[#FDFEF1] pl-4 text-black font-bold w-[227px] h-[49px] rounded-lg text-left' : ''}`}>
+          <button className={`pl-4 ${(isActive('/userdashboard-groups')) ? 'bg-[#FDFEF1] pl-4 text-black font-bold w-[227px] h-[49px] rounded-lg text-left' : ''}`}>
               <Link to="/userdashboard-groups" >Groups</Link>
           </button>
-            <button className={`pl-4 ${isActive('/') ? 'bg-[#FDFEF1] pl-4 text-black font-bold w-[227px] h-[49px] rounded-lg text-left' : ''}`}>
-              Billings
+            <button className={`pl-4 ${isActive('/user-billings') ? 'bg-[#FDFEF1] pl-4 text-black font-bold w-[227px] h-[49px] rounded-lg text-left' : ''}`}>
+              <Link to="/user-billings">Billings</Link>
             </button>
             <button className={`pl-4 ${isActive('/userdashboard-resources') ? 'bg-[#FDFEF1] pl-4 text-black font-bold w-[227px] h-[49px] rounded-lg text-left' : ''}`}>
               <Link to="/userdashboard-resources" >Resources</Link>
@@ -41,8 +41,8 @@ function UserSidebar() {
             <button className={`pl-4 ${isActive('/userdashboard-FAQs') ? 'bg-[#FDFEF1] pl-4 text-black font-bold w-[227px] h-[49px] rounded-lg text-left' : ''}`}>
               <Link to="/userdashboard-FAQs" >FAQ</Link>
             </button>
-            <button className={`pl-4 ${isActive('/') ? 'bg-[#FDFEF1] pl-4 text-black font-bold w-[227px] h-[49px] rounded-lg text-left' : ''}`}>
-              <Link to="/" >Profile</Link>
+            <button className={`pl-4 ${isActive('/user-profile') ? 'bg-[#FDFEF1] pl-4 text-black font-bold w-[227px] h-[49px] rounded-lg text-left' : ''}`}>
+              <Link to="/user-profile" >Profile</Link>
             </button>
             <button className={`pl-4 ${isActive('/') ? 'bg-[#FDFEF1] pl-4 text-black font-bold w-[227px] h-[49px] rounded-lg text-left' : ''}`}>
               Logout

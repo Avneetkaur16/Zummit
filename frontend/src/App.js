@@ -52,6 +52,10 @@ import { addTherapist } from "./utils/Slices/therapistSlice";
 import { addAdmin } from "./utils/Slices/adminSlice";
 import About from "./components/HomePage/About";
 import UserAppointments from "./components/User/Appointments/UserAppointments";
+import UserGroupTherapy from "./components/User/Groups/UserGroupTherapy";
+import UserSupport from "./components/User/Groups/UserSupport";
+import UserBillings from "./components/User/Billings/UserBillings";
+import UserProfile from "./components/User/Profile/UserProfile";
 
 const WithHeaderAndFooter = ({ children }) => (
   <>
@@ -249,7 +253,11 @@ const routes = [
   { path: "/admin-register", element: <SignUp /> },
   { path: "/userdashboard-groups", element: <UserGroups /> },
   { path: "/userdashboard-FAQs", element: <UserFAQ /> },
-  { path: "/user-appointments", element: <UserAppointments /> }
+  { path: "/user-appointments", element: <UserAppointments /> },
+  { path: "/user-billings", element: <UserBillings /> },
+  { path: "/user-group/:id", element: <UserGroupTherapy /> },
+  { path: "/user-support/:id", element: <UserSupport /> },
+  { path: "/user-profile", element: <UserProfile /> }
 ];
 
 function renderRoutes(routes) {

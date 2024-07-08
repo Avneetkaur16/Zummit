@@ -130,13 +130,11 @@ const FAQs = () => {
   };
 
   return (
-    <div className="mb-16">
+    <div className="mb-16 w-full p-4">
       <div>
-        {/* <h1 className="text-2xl font-semibold">How can we help</h1> */}
-        <p className="text-3xl font-semibold mb-10 text-center">FAQ</p>
+        <p className="text-3xl font-medium mb-10 ml-5">FAQ</p>
       </div>
       <div>
-        {/* <h1 className="text-2xl ml-[25%] my-4 text-start font-semibold">Booking an appointment</h1> */}
         <div className="flex flex-col h-[20%] w-[70%] mx-40">
           <Section
             title={

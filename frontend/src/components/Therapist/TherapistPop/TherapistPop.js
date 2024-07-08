@@ -78,6 +78,7 @@ const TherapistPop = () => {
       {showTherapistPop && (
         <div className="absolute  bg-black bg-opacity-50 w-screen h-screen flex items-center justify-center">
           <div className="absolute  top-1/2 left-1/2 transform-gpu -translate-x-1/2 -translate-y-1/2 p-10 bg-[#4DB3CB] h-[80vh] w-[80vw] shadow-xl rounded-md">
+          
             <h1 className="font-semibold mb-2 text-3xl">
               Please Enter Your Details
             </h1>
