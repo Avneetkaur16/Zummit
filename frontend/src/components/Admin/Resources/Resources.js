@@ -4,7 +4,7 @@ import { BASE_ADMIN } from "../../../utils/constants";
 import SearchBar from "../SearchBar";
 
 const Resources = () => {
-  const [addedReview, setAddedReview] = useState([])
+  const [addedReview, setAddedReview] = useState([]);
 
   useEffect(() => {
     axios
@@ -79,7 +79,9 @@ const Resources = () => {
   );
   return (
     <div className="w-full m-10 ">
+
       <SearchBar />
+
       <div className="flex w-[90%] justify-between items-center">
         <h1 className="text-2xl  my-8">Groups</h1>
         <button className="rounded-md py-2 px-4   text-lg bg-[#00677F] text-white">

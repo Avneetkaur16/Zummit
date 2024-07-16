@@ -26,7 +26,9 @@ const Client = () => {
 
   return (
     <div className="w-full m-10 ">
+
       <SearchBar />
+
       <div className="flex w-[90%] justify-between items-center">
         <h1 className="text-2xl  my-8">Clients</h1>
       </div>
